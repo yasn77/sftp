@@ -29,7 +29,7 @@ filter group  (objectClass=group)
 EOF
 
 echo "UsePAM yes" >> /etc/ssh/sshd_config
-[[ -n "${LDAP_ALLOWEDGROUPS}" ]] && echo "AllowedGroups ${LDAP_ALLOWEDGROUPS}" >> /etc/ssh/sshd_config
+[[ -n "${LDAP_ALLOWGROUPS}" ]] && echo "AllowGroups ${LDAP_ALLOWGROUPS}" >> /etc/ssh/sshd_config
 
 if ! nslcd -c
 then
