@@ -41,6 +41,7 @@ To use LDAP set the following environment variables:
 - `LDAP_BINDPW`
 - `LDAP_SEARCH_BASE`
 - `LDAP_URI`
+- `LDAP_ALLOWEDGROUPS` (if set, only listed groups will be allowed access)
 
 Note: `SFTP_USERS` variable is ignored, this means additional directories are
 not created. In the users home directory (which is r/w for root only), `sftp`
